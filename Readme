@@ -1,0 +1,19 @@
+#Pour la verification de la syntax yml
+yum install python-pip
+pip install ansible-lint
+
+#Lancer le playbook
+ansible-playbook -i hosts.yml deploy.yml
+
+#Pour installer lint afin de verifier la syntax de votre fichier yml
+Install ansible lint
+#verifier apres installation du module
+ansible-lint deploy.yml
+
+
+sudo yum install python-pip
+sudo pip install ansible-lint
+
+
+#Ansible verbose option pour deboguer
+ansible-playbook -i hosts.yml -vvv deploy.yml
